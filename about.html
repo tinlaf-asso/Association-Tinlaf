@@ -1,114 +1,261 @@
-<main class="max-w-5xl mx-auto px-4 py-10 space-y-8">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Qui sommes-nous ? – Association Tinlaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Présentation de l’Association Tinlaf pour le Développement et la Coopération : histoire, fonctionnement, membres et vision.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- Titre -->
-  <section class="text-center space-y-2">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-2">Qui sommes-nous ?</h1>
-    <p dir="rtl" lang="ar" class="text-base text-gray-700" style="font-family: 'Amiri', serif;">
-      جمعية تنلاف للتنمية والتعاون
-    </p>
-  </section>
+  <!-- HEADER (même que index.html) -->
+  <header class="bg-green-700 text-white p-4 w-full flex items-center gap-4 relative">
+    <!-- Bouton menu hamburger -->
+    <button id="menu-btn" class="text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
 
-  <!-- Bloc arabe -->
-  <section dir="rtl" lang="ar"
-           class="bg-green-50 border-l-4 border-green-400 rounded-2xl p-5 sm:p-6 shadow text-right space-y-4"
-           style="font-family: 'Amiri', serif;">
-    <p class="text-lg font-semibold mb-2">
-      نبذة عن الجمعية
-    </p>
-    <p class="leading-relaxed text-base">
-      تأسست <strong>جمعية تنلاف للتنمية والتعاون</strong> سنة <strong>2018</strong> بمبادرة مجموعة من أبناء الدوار
-      الغيورين على منطقتهم، بهدف المساهمة في تحسين أوضاع الساكنة وخدمة الصالح العام في مجالات متعددة، من بينها
-      البنية التحتية، الشأن الاجتماعي، والتضامن الإنساني.
-    </p>
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="images/tinlaflogo (1).jpg" alt="Logo de l'association"
+           class="h-16 w-16 sm:h-20 sm:w-20 object-contain">
+    </div>
 
-    <p class="text-lg font-semibold mb-1">
-      تسيير الجمعية وتجديد المكتب
-    </p>
-    <p class="leading-relaxed text-base">
-      تُسَيَّر الجمعية من طرف <strong>مكتب مسيّر</strong> يُنتخب خلال جمع عام، وتتم عملية تجديده
-      بشكل دوري كل <strong>ثلاث سنوات</strong>، حرصًا على إشراك أكبر عدد ممكن من الكفاءات والطاقات المحلية.
-      ويتكوّن المكتب عادةً من:
-    </p>
-    <ul class="list-disc pr-6 text-base leading-relaxed">
-      <li>الرئيس ونائبه</li>
-      <li>الكاتب العام ونائبه</li>
-      <li>أمين المال ونائبه</li>
-      <li>عدد من المستشارين المساهمين في تتبع المشاريع واتخاذ القرارات</li>
-    </ul>
-    <p class="leading-relaxed text-base">
-      هذا النظام القائم على التداول يضمن ضخ دماء جديدة داخل المكتب، وتشجيع روح المسؤولية والعمل الجماعي بين أعضاء الجمعية.
-    </p>
+    <!-- Titres -->
+    <div class="flex flex-col flex-grow text-center">
+      <h1 class="text-xl sm:text-2xl font-bold font-[Amiri]" dir="rtl" lang="ar">
+        جمعية تنلاف للتنمية والتعاون
+      </h1>
+      <h2 class="text-sm sm:text-lg font-semibold">
+        Association TINLAF pour le Développement et la Coopération
+      </h2>
+    </div>
+  </header>
 
-    <p class="text-lg font-semibold mb-1">
-      الانخراطات ومصادر التمويل
-    </p>
-    <p class="leading-relaxed text-base">
-      تعتمد الجمعية في تمويل مشاريعها وأنشطتها أساسًا على <strong>انخراطات أعضائها</strong>، حيث يبلغ مبلغ
-      الانخراط السنوي <strong>600 درهم</strong> للفرد، ويصل عدد المنخرطين إلى حوالي <strong>40 عضوًا</strong>.
-      وتمثل هذه المساهمات ركيزة أساسية في ضمان استمرارية عمل الجمعية واستقلالية قراراتها.
-    </p>
-    <p class="leading-relaxed text-base">
-      بالإضافة إلى ذلك، تستقبل الجمعية في بعض المشاريع <strong>مساهمات تطوعية</strong> من المحسنين وأبناء المنطقة
-      داخل الوطن وخارجه، في إطار من الشفافية والتسيير المسؤول، مع الحرص على توجيه كل دعم نحو مشاريع تعود بالنفع
-      المباشر على ساكنة الدوار.
-    </p>
+  <!-- MENU LATÉRAL -->
+  <nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-4">
+      <button id="close-btn" class="mb-4 text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-    <p class="text-lg font-semibold mb-1">
-      رؤيتنا
-    </p>
-    <p class="leading-relaxed text-base">
-      تسعى جمعية تنلاف للتنمية والتعاون إلى جعل دوار تنلاف نموذجًا في التضامن والتعاون والتنمية المحلية، من خلال
-      مشاريع واقعية، وشفافية في التسيير، وشراكة فعّالة بين الساكنة، أبناء الجالية، وجميع الغيورين على المنطقة.
-    </p>
-  </section>
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-house"></i>
+          <a href="index.html" class="text-lg">Accueil</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="contact.html" class="text-lg">Contact</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-briefcase"></i>
+          <a href="realisations.html" class="text-lg">Réalisations</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-users"></i>
+          <a href="about.html" class="text-lg font-semibold underline">Qui sommes-nous</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-tree"></i>
+          <a href="douar.html" class="text-lg">À propos du douar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Bloc français -->
-  <section class="bg-white rounded-2xl shadow p-5 sm:p-6 space-y-4 border border-gray-100">
-    <h2 class="text-xl font-semibold mb-2">Présentation de l’association</h2>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      Créée en <strong>2018</strong>, l’<strong>Association TINLAF pour le Développement et la Coopération</strong>
-      est née de la volonté d’un groupe d’habitants originaires du douar Tinlaf de s’organiser pour améliorer
-      les conditions de vie de la population locale. Elle intervient dans plusieurs domaines&nbsp;:
-      infrastructures de base, action sociale, solidarité et accompagnement du douar.
-    </p>
+  <!-- SCRIPT MENU -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('close-btn');
 
-    <h3 class="text-lg font-semibold mt-3">Gouvernance et fonctionnement</h3>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      L’association est dirigée par un <strong>bureau exécutif</strong> élu en assemblée générale. Afin de garantir
-      la participation de tous et le renouvellement des responsabilités, la composition du bureau est revue
-      tous les <strong>trois ans</strong>. Ce bureau comprend généralement&nbsp;:
-    </p>
-    <ul class="list-disc list-inside text-sm sm:text-base text-gray-700 leading-relaxed">
-      <li>un président et un vice-président</li>
-      <li>un secrétaire général et un secrétaire adjoint</li>
-      <li>un trésorier et un trésorier adjoint</li>
-      <li>plusieurs conseillers qui accompagnent le suivi des projets et la prise de décision</li>
-    </ul>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      Ce mode de fonctionnement basé sur l’alternance permet de faire émerger de nouvelles idées, de partager
-      les responsabilités et de renforcer la culture du travail collectif au sein du douar.
-    </p>
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.remove('-translate-x-full');
+    });
 
-    <h3 class="text-lg font-semibold mt-3">Adhésions et ressources financières</h3>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      Les ressources de l’association proviennent principalement des <strong>cotisations de ses membres</strong>.
-      Le montant de l’adhésion annuelle est fixé à <strong>600&nbsp;DH</strong> par personne, pour un total
-      d’environ <strong>40 membres</strong>. Ces contributions constituent le socle financier qui permet à
-      l’association de planifier et de réaliser ses projets dans la durée.
-    </p>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      En complément, l’association peut bénéficier, selon les projets, de <strong>dons volontaires</strong> de
-      bienfaiteurs ou de la diaspora issue de Tinlaf. L’utilisation de ces fonds se fait dans un esprit de
-      transparence, avec une priorité donnée aux actions ayant un impact direct sur la population locale.
-    </p>
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.add('-translate-x-full');
+    });
 
-    <h3 class="text-lg font-semibold mt-3">Notre vision</h3>
-    <p class="leading-relaxed text-sm sm:text-base text-gray-700">
-      À travers ses différentes initiatives, l’Association TINLAF pour le Développement et la Coopération aspire
-      à faire du douar Tinlaf un exemple de solidarité, de participation citoyenne et de développement local
-      responsable, en s’appuyant sur les forces vives du village et sur l’engagement de toutes celles et ceux
-      qui portent Tinlaf dans leur cœur.
-    </p>
-  </section>
+    window.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.add('-translate-x-full');
+      }
+    });
+  </script>
 
-</main>
+  <!-- CONTENU PRINCIPAL -->
+  <main class="max-w-5xl mx-auto px-4 py-10 space-y-10">
+
+    <!-- En-tête de page -->
+    <section class="text-center space-y-3">
+      <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-800 text-xs font-semibold uppercase tracking-wide">
+        Présentation de l’association
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-bold">Qui sommes-nous ?</h1>
+      <p dir="rtl" lang="ar" class="text-base text-gray-700" style="font-family: 'Amiri', serif;">
+        جمعية تنلاف للتنمية والتعاون – من أجل تنمية شاملة ومستدامة لدوار تنلاف.
+      </p>
+    </section>
+
+    <!-- Bloc FR + chiffres clés -->
+    <section class="grid gap-6 md:grid-cols-[2fr,1fr] items-start">
+      <!-- Texte FR -->
+      <div class="bg-white rounded-2xl shadow p-5 sm:p-6 space-y-4 border border-gray-100">
+        <h2 class="text-xl font-semibold mb-1">Notre histoire</h2>
+        <p class="leading-relaxed text-sm sm:text-base text-gray-700">
+          Créée en <strong>2018</strong>, l’<strong>Association TINLAF pour le Développement et la Coopération</strong>
+          est née de la volonté d’un groupe d’habitants originaires du douar Tinlaf de s’organiser pour améliorer
+          les conditions de vie de la population locale. Elle intervient dans plusieurs domaines&nbsp;:
+          infrastructures de base, action sociale, solidarité et accompagnement du douar.
+        </p>
+
+        <h3 class="text-lg font-semibold mt-3">Gouvernance et fonctionnement</h3>
+        <p class="leading-relaxed text-sm sm:text-base text-gray-700">
+          L’association est dirigée par un <strong>bureau exécutif</strong> élu en assemblée générale. Afin de garantir
+          la participation de tous et le renouvellement des responsabilités, la composition du bureau est revue
+          tous les <strong>trois ans</strong>. Ce bureau comprend généralement&nbsp;:
+        </p>
+        <ul class="list-disc list-inside text-sm sm:text-base text-gray-700 leading-relaxed">
+          <li>un président et un vice-président ;</li>
+          <li>un secrétaire général et un secrétaire adjoint ;</li>
+          <li>un trésorier et un trésorier adjoint ;</li>
+          <li>plusieurs conseillers qui accompagnent le suivi des projets et la prise de décision.</li>
+        </ul>
+
+        <p class="leading-relaxed text-sm sm:text-base text-gray-700">
+          Ce mode de fonctionnement basé sur l’alternance permet de faire émerger de nouvelles idées, de partager
+          les responsabilités et de renforcer la culture du travail collectif au sein du douar.
+        </p>
+      </div>
+
+      <!-- Chiffres clés -->
+      <div class="space-y-4">
+        <div class="bg-green-700 text-white rounded-2xl p-5 shadow flex flex-col items-center text-center">
+          <h3 class="text-lg font-semibold mb-2">Chiffres clés</h3>
+          <div class="space-y-2 text-sm">
+            <p><span class="font-bold text-xl">2018</span><br>Année de création</p>
+            <p><span class="font-bold text-xl">~40</span><br>Membres adhérents</p>
+            <p><span class="font-bold text-xl">600 DH</span><br>Cotisation annuelle par membre</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-4 text-sm text-gray-700 border border-gray-100">
+          <h4 class="font-semibold mb-1">Localisation</h4>
+          <p>
+            Douar Tinlaf,<br>
+            Commune Tisrass,<br>
+            Province de Taroudant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloc arabe détaillé -->
+    <section dir="rtl" lang="ar"
+             class="bg-green-50 border-l-4 border-green-400 rounded-2xl p-5 sm:p-6 shadow text-right space-y-4"
+             style="font-family: 'Amiri', serif;">
+      <h2 class="text-lg font-semibold mb-1">
+        نبذة عن الجمعية
+      </h2>
+      <p class="leading-relaxed text-base">
+        تأسست <strong>جمعية تنلاف للتنمية والتعاون</strong> سنة <strong>2018</strong> بمبادرة مجموعة من أبناء الدوار
+        الغيورين على منطقتهم، بهدف المساهمة في تحسين أوضاع الساكنة وخدمة الصالح العام في مجالات متعددة،
+        من بينها البنية التحتية، الشأن الاجتماعي، والتضامن الإنساني.
+      </p>
+
+      <h3 class="text-lg font-semibold mb-1">
+        تسيير الجمعية وتجديد المكتب
+      </h3>
+      <p class="leading-relaxed text-base">
+        تُسَيَّر الجمعية من طرف <strong>مكتب مسيّر</strong> يُنتخب خلال جمع عام، وتتم عملية تجديده
+        بشكل دوري كل <strong>ثلاث سنوات</strong>، حرصًا على إشراك أكبر عدد ممكن من الكفاءات والطاقات المحلية.
+        ويتكوّن المكتب عادةً من:
+      </p>
+      <ul class="list-disc pr-6 text-base leading-relaxed">
+        <li>الرئيس ونائبه</li>
+        <li>الكاتب العام ونائبه</li>
+        <li>أمين المال ونائبه</li>
+        <li>عدد من المستشارين المساهمين في تتبع المشاريع واتخاذ القرارات</li>
+      </ul>
+      <p class="leading-relaxed text-base">
+        هذا النظام القائم على التداول يضمن ضخ دماء جديدة داخل المكتب، وتشجيع روح المسؤولية والعمل الجماعي بين أعضاء الجمعية.
+      </p>
+
+      <h3 class="text-lg font-semibold mb-1">
+        الانخراطات ومصادر التمويل
+      </h3>
+      <p class="leading-relaxed text-base">
+        تعتمد الجمعية في تمويل مشاريعها وأنشطتها أساسًا على <strong>انخراطات أعضائها</strong>، حيث يبلغ مبلغ
+        الانخراط السنوي <strong>600 درهم</strong> للفرد، ويصل عدد المنخرطين إلى حوالي <strong>40 عضوًا</strong>.
+        وتمثل هذه المساهمات ركيزة أساسية في ضمان استمرارية عمل الجمعية واستقلالية قراراتها.
+      </p>
+      <p class="leading-relaxed text-base">
+        بالإضافة إلى ذلك، تستقبل الجمعية في بعض المشاريع <strong>مساهمات تطوعية</strong> من المحسنين وأبناء المنطقة
+        داخل الوطن وخارجه، في إطار من الشفافية والتسيير المسؤول، مع الحرص على توجيه كل دعم نحو مشاريع تعود بالنفع
+        المباشر على ساكنة الدوار.
+      </p>
+
+      <h3 class="text-lg font-semibold mb-1">
+        رؤيتنا
+      </h3>
+      <p class="leading-relaxed text-base">
+        تسعى جمعية تنلاف للتنمية والتعاون إلى جعل دوار تنلاف نموذجًا في التضامن والتعاون والتنمية المحلية،
+        من خلال مشاريع واقعية، وشفافية في التسيير، وشراكة فعّالة بين الساكنة، أبناء الجالية، وجميع الغيورين على المنطقة.
+      </p>
+    </section>
+
+    <!-- Vision FR / Appel à l'action -->
+    <section class="bg-green-50 rounded-2xl p-5 sm:p-6 border border-green-100">
+      <h2 class="text-xl font-semibold mb-2">Notre vision</h2>
+      <p class="leading-relaxed text-sm sm:text-base text-gray-700 mb-4">
+        À travers ses différentes initiatives, l’Association TINLAF pour le Développement et la Coopération aspire
+        à faire du douar Tinlaf un exemple de solidarité, de participation citoyenne et de développement local
+        responsable, en s’appuyant sur les forces vives du village et sur l’engagement de toutes celles et ceux
+        qui portent Tinlaf dans leur cœur.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-sm">
+        <p class="text-gray-700">
+          Pour mieux comprendre notre travail, vous pouvez consulter nos projets déjà réalisés ou découvrir le douar.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <a href="realisations.html"
+             class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 transition">
+            Voir nos réalisations
+          </a>
+          <a href="douar.html"
+             class="inline-flex items-center justify-center px-4 py-2 rounded-full border border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">
+            Découvrir le douar
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (tu peux garder le même que sur index) -->
+  <footer class="bg-green-700 text-white text-center p-2 mt-10 text-sm">
+    <p>&copy; 2025 Association TINLAF pour le Développement et la Coopération - Tous droits réservés</p>
+    <div class="mt-1 flex justify-center space-x-4">
+      <a href="https://www.facebook.com/share/14tRM5hjMP/?mibextid=qi2Omg" target="_blank" class="inline-block">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-5 h-5 inline-block">
+      </a>
+      <a href="https://wa.me/212666768839" target="_blank" class="inline-block ml-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-5 h-5 inline-block">
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
