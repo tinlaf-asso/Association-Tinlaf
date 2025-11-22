@@ -411,14 +411,29 @@
       
     </div>
   </footer>
+    <!-- juste avant </body> -->
   <script>
-  // Slider simple pour la section "Réalisation en cours"
-  const carousel = document.getElementById('carousel-ongoing');
-  if (carousel) {
-    const slides = carousel.querySelectorAll('img');
-    let current = 0;
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.getElementById('carousel-ongoing');
+      if (!carousel) return;
 
-    if (slides.length > 1) {
+      const slides = carousel.querySelectorAll('img');
+      let current = 0;
+
+      if (slides.length <= 1) return;
+
+      // on s'assure que seule la première image est visible au départ
+      slides.forEach((img, index) => {
+        img.classList.add('absolute', 'inset-0', 'w-full', 'h-full', 'object-cover', 'transition-opacity', 'duration-700');
+        if (index === 0) {
+          img.classList.add('opacity-100');
+          img.classList.remove('opacity-0');
+        } else {
+          img.classList.add('opacity-0');
+          img.classList.remove('opacity-100');
+        }
+      });
+
       setInterval(() => {
         slides[current].classList.remove('opacity-100');
         slides[current].classList.add('opacity-0');
@@ -428,8 +443,10 @@
         slides[current].classList.remove('opacity-0');
         slides[current].classList.add('opacity-100');
       }, 4000); // change d'image toutes les 4 secondes
-    }
-  }
-</script>
+    });
+  </script>
+</body>
+</html>
+
 </body>
 </html>
