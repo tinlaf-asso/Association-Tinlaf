@@ -10,183 +10,151 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 </head>
-  
+
 <body class="bg-gray-100 text-gray-800">
-    <!-- Lien pour la police arabe -->
-<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 
-<header class="bg-green-700 text-white p-4 w-full flex items-center gap-4 relative">
-  <!-- Bouton menu hamburger -->
-  <button id="menu-btn" class="text-white focus:outline-none">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-         xmlns="http://www.w3.org/2000/svg">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-  </button>
-
-  <!-- Logo -->
-  <div class="flex-shrink-0">
-    <img src="images/tinlaflogo (1).jpg" alt="Logo de l'association" class="h-16 w-16 sm:h-20 sm:w-20 object-contain">
-  </div>
-
-  <!-- Titres -->
-  <div class="flex flex-col flex-grow text-center">
-    <h1 class="text-xl sm:text-2xl font-bold font-[Amiri]" dir="rtl" lang="ar">
-      جمعية تنلاف للتنمية والتعاون
-    </h1>
-    <h2 class="text-sm sm:text-lg font-semibold">
-      Association TINLAF pour le Développement et la Coopération
-    </h2>
-  </div>
-</header>
-
-
-<!-- Menu latéral caché -->
-<nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
-  <div class="p-4">
-    <button id="close-btn" class="mb-4 text-white focus:outline-none">
-      <!-- Icône fermeture -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+  <!-- HEADER -->
+  <header class="bg-green-700 text-white p-4 w-full flex items-center gap-4 relative">
+    <!-- Bouton menu hamburger -->
+    <button id="menu-btn" class="text-white focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+           xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
 
-    <!-- Liens de navigation -->
-    <ul class="space-y-6">
-      <li class="flex items-center space-x-3 cursor-pointer hover:text-green-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M3 9L12 2l9 7v11a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-6H9v6a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9z"/>
-        </svg>
-        <a href="index.html" class="text-lg">Accueil</a>
-      </li>
-      <li class="flex items-center space-x-3 cursor-pointer hover:text-green-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12l-4 4m0 0l-4-4m4 4V8" />
-        </svg>
-        <a href="contact.html" class="text-lg">Contact</a>
-      </li>
-      <li class="flex items-center space-x-3 cursor-pointer hover:text-green-300">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2M7 7a4 4 0 1 1 8 0 4 4 0 0 1-8 0z" />
-    </svg>
-    <a href="realisations.html" class="text-lg">Réalisations</a>
-  </li>
-      <li class="flex items-center space-x-3 cursor-pointer hover:text-green-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <circle cx="12" cy="12" r="10" />
-          <line x1="12" y1="16" x2="12" y2="12" />
-          <line x1="12" y1="8" x2="12" y2="8" />
-        </svg>
-        <a href="about.html" class="text-lg">Qui sommes-nous</a>
-      </li>
-      <li class="flex items-center space-x-3 cursor-pointer hover:text-green-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
-                   10-4.48 10-10S17.52 2 12 2zm0 18
-                   c-4.41 0-8-3.59-8-8s3.59-8 8-8
-                   8 3.59 8 8-3.59 8-8 8z"/>
-          <path d="M10 16.5l6-4.5-6-4.5v9z"/>
-        </svg>
-        <a href="douar.html" class="text-lg">À propos du douar</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
-<section 
-  class="relative text-center py-12 bg-center bg-no-repeat max-w-full"
-  style="background-image: url('images/ensemble.jpg'); background-size: 100%;"
->
-  <div class="bg-black bg-opacity-50 py-12 px-4 max-w-4xl mx-auto rounded-lg">
-    <h1 class="text-2xl sm:text-3xl font-bold text-white mb-4">
-      Ensemble pour un avenir meilleur à <span class="text-green-400">TINLAF</span>
-    </h1>
-    <h2 class="text-xl sm:text-2xl text-white mb-2 font-semibold">
-      معًا من أجل مستقبل أفضل في <span class="text-green-400">تنلاف</span>
-    </h2>
-    <h3 class="text-xl sm:text-2xl text-white font-semibold">
-      ⴰⵎⴰⵣⵉⵖ ⴳ ⴰⵎⵓⵣⵣⴰⵍ ⴰⵏⴰⵎⴻⵏ ⴰⵏ <span class="text-green-400">ⵜⵉⵏⵍⴰⴼ</span>
-    </h3>
-  </div>
-</section>
-
-
-
-
-
-
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const sidebar = document.getElementById('sidebar');
-  const closeBtn = document.getElementById('close-btn');
-
-  menuBtn.addEventListener('click', () => {
-    sidebar.classList.remove('-translate-x-full');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    sidebar.classList.add('-translate-x-full');
-  });
-
-  // Optionnel: fermer le menu si clic en dehors
-  window.addEventListener('click', (e) => {
-    if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-      sidebar.classList.add('-translate-x-full');
-    }
-  });
-</script>
-
-
-      
-      
-
-    <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
-
-   <section class="mt-10">
-  <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-md px-6 sm:px-10 py-8 sm:py-10 text-center">
-    <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-800 text-xs font-semibold uppercase tracking-wide mb-3">
-      Association locale de développement rural
-    </span>
-
-    <h2 class="text-3xl sm:text-4xl font-bold mb-3">
-      Bienvenue à Tinlaf
-    </h2>
-
-    <p dir="rtl" lang="ar"
-       class="text-sm sm:text-base text-gray-700 mb-3"
-       style="font-family: 'Amiri', serif;">
-      جمعية تنلاف للتنمية والتعاون، من أجل تنمية شاملة ومستدامة لدوار تنلاف.
-    </p>
-
-    <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-sm sm:text-base">
-      L’Association TINLAF pour le Développement et la Coopération est une initiative locale née au douar Tinlaf,
-      commune de Tisrass, province de Taroudant. Elle rassemble les habitants du douar et ses amis autour d’un objectif commun&nbsp;:
-      améliorer durablement les conditions de vie à travers des projets d’infrastructure, d’éducation et de solidarité.
-    </p>
-
-    <!-- Boutons d'action -->
-    <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
-      <a href="realisations.html"
-         class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 text-sm font-semibold hover:bg-green-50 transition">
-        Voir nos réalisations
-      </a>
-      <a href="douar.html"
-   class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 text-sm font-semibold hover:bg-green-50 transition">
-  Découvrir le douar
-</a>
-
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="images/tinlaflogo (1).jpg" alt="Logo de l'association" class="h-16 w-16 sm:h-20 sm:w-20 object-contain">
     </div>
-  </div>
-</section>
 
+    <!-- Titres -->
+    <div class="flex flex-col flex-grow text-center">
+      <h1 class="text-xl sm:text-2xl font-bold font-[Amiri]" dir="rtl" lang="ar">
+        جمعية تنلاف للتنمية والتعاون
+      </h1>
+      <h2 class="text-sm sm:text-lg font-semibold">
+        Association TINLAF pour le Développement et la Coopération
+      </h2>
+    </div>
+  </header>
 
+  <!-- MENU LATÉRAL -->
+  <nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-4">
+      <button id="close-btn" class="mb-4 text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-    <!-- Nos axes d’intervention -->
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-house"></i>
+          <a href="index.html" class="text-lg">Accueil</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="contact.html" class="text-lg">Contact</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-briefcase"></i>
+          <a href="realisations.html" class="text-lg">Réalisations</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-users"></i>
+          <a href="about.html" class="text-lg">Qui sommes-nous</a>
+        </li>
+        <li class="flex items-center space-x-3 hover:text-green-300">
+          <i class="fa-solid fa-tree"></i>
+          <a href="douar.html" class="text-lg">À propos du douar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section 
+    class="relative text-center py-12 bg-center bg-no-repeat max-w-full"
+    style="background-image: url('images/ensemble.jpg'); background-size: 100%;"
+  >
+    <div class="bg-black bg-opacity-50 py-12 px-4 max-w-4xl mx-auto rounded-lg">
+      <h1 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+        Ensemble pour un avenir meilleur à <span class="text-green-400">TINLAF</span>
+      </h1>
+      <h2 class="text-xl sm:text-2xl text-white mb-2 font-semibold">
+        معًا من أجل مستقبل أفضل في <span class="text-green-400">تنلاف</span>
+      </h2>
+      <h3 class="text-xl sm:text-2xl text-white font-semibold">
+        ⴰⵎⴰⵣⵉⵖ ⴳ ⴰⵎⵓⵣⵣⴰⵍ ⴰⵏⴰⵎⴻⵏ ⴰⵏ <span class="text-green-400">ⵜⵉⵏⵍⴰⴼ</span>
+      </h3>
+    </div>
+  </section>
+
+  <!-- SCRIPT MENU -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('close-btn');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.remove('-translate-x-full');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      sidebar.classList.add('-translate-x-full');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
+        sidebar.classList.add('-translate-x-full');
+      }
+    });
+  </script>
+
+  <!-- CONTENU -->
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
+
+    <!-- Bienvenue -->
+    <section class="mt-10">
+      <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-md px-6 sm:px-10 py-8 sm:py-10 text-center">
+        <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-800 text-xs font-semibold uppercase tracking-wide mb-3">
+          Association locale de développement rural
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-bold mb-3">
+          Bienvenue à Tinlaf
+        </h2>
+
+        <p dir="rtl" lang="ar"
+           class="text-sm sm:text-base text-gray-700 mb-3"
+           style="font-family: 'Amiri', serif;">
+          جمعية تنلاف للتنمية والتعاون، من أجل تنمية شاملة ومستدامة لدوار تنلاف.
+        </p>
+
+        <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed text-sm sm:text-base">
+          L’Association TINLAF pour le Développement et la Coopération est une initiative locale née au douar Tinlaf,
+          commune de Tisrass, province de Taroudant. Elle rassemble les habitants du douar et ses amis autour d’un objectif commun :
+          améliorer durablement les conditions de vie à travers des projets d’infrastructure, d’éducation et de solidarité.
+        </p>
+
+        <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="realisations.html"
+             class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 text-sm font-semibold hover:bg-green-50 transition">
+            Voir nos réalisations
+          </a>
+          <a href="douar.html"
+             class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 text-sm font-semibold hover:bg-green-50 transition">
+            Découvrir le douar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Axes d’intervention -->
     <section>
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Nos principaux axes d’intervention</h2>
       <div class="grid gap-6 md:grid-cols-3">
@@ -213,121 +181,116 @@
         </div>
 
         <div class="bg-white rounded-xl shadow p-5 flex flex-col">
-  <div class="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 mb-3">
-    <i class="fa-solid fa-hand-holding-heart"></i>
-  </div>
-  <h3 class="text-lg font-semibold mb-2">Solidarité & entraide</h3>
-  <p class="text-sm text-gray-700">
-    Actions d’urgence lors des crises (COVID-19, séisme d’Al Haouz), soutien aux familles
-    vulnérables et mobilisation de la diaspora originaire de Tinlaf.
-  </p>
-</div>
-      </div>
-    </section>
-
-       
-   <!-- Réalisation en cours -->
-<section class="mt-16">
-  <!-- Titre + intro -->
-  <div class="text-center max-w-3xl mx-auto mb-8">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-2">
-      Réalisation en cours
-    </h2>
-    <p class="text-gray-600 text-sm sm:text-base">
-      Un projet routier actuellement en cours entre la passerelle et l’entrée du douar Tinlaf,
-      afin d’améliorer l’accès au village et de faciliter le déplacement des habitants dans de bonnes conditions.
-    </p>
-  </div>
-
-  <!-- Carte du projet -->
-  <div class="bg-white rounded-3xl shadow-md p-6 sm:p-8">
-    <div class="grid gap-6 md:grid-cols-2 items-center">
-      <!-- Texte du projet -->
-      <div class="space-y-4">
-        <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-800 text-xs font-semibold uppercase tracking-wide">
-          Projet routier en cours
-        </span>
-
-        <h3 class="text-xl sm:text-2xl font-semibold leading-snug">
-          Aménagement et revêtement de la route
-          <span class="block text-green-700">
-            entre la passerelle et l’entrée du douar Tinlaf
-          </span>
-        </h3>
-
-        <!-- Texte FR -->
-        <p class="text-sm sm:text-base text-gray-700">
-          Ce projet vise à aménager et à revêtir la route qui relie la passerelle au principal accès du douar Tinlaf.
-          Il s’inscrit dans la continuité des efforts de l’Association Tinlaf pour le Développement et la Coopération
-          afin d’améliorer la voirie locale, faciliter la circulation des habitants et renforcer l’ouverture du douar
-          sur son environnement, avec le soutien et la contribution de bienfaiteurs.
-        </p>
-
-        <!-- Texte AR -->
-        <p dir="rtl" lang="ar"
-           class="text-sm sm:text-base text-gray-700"
-           style="font-family: 'Amiri', serif;">
-          يعمل هذا المشروع الخيري على تهيئة وتعبيد الطريق الرابطة بين القنطرة ومدخل دوار تنلاف، وذلك بهدف تحسين
-          الولوج إلى الدوار وتسهيل تنقل الساكنة في ظروف جيدة. يندرج هذا العمل ضمن جهود جمعية تنلاف للتنمية
-          والتعاون في الارتقاء بالبنية التحتية وخدمة الساكنة، بدعم ومساهمة أهل الخير والإحسان.
-        </p>
-
-        <!-- Boutons de soutien FR + AR -->
-        <div class="mt-6 flex flex-col items-center gap-3">
-          <a href="#soutenir"
-             class="inline-flex w-full max-w-xs justify-center px-6 py-3 rounded-full bg-green-700 text-white text-sm sm:text-base font-semibold shadow hover:bg-green-800 transition">
-            Nous soutenir pour finaliser ce projet
-          </a>
-          <a href="#soutenir"
-             class="inline-flex w-full max-w-xs justify-center px-6 py-3 rounded-full border border-green-700 text-green-700 text-sm sm:text-base font-semibold bg-white hover:bg-green-50 transition"
-             dir="rtl" lang="ar" style="font-family: 'Amiri', serif;">
-            المساهمة في إتمام هذا المشروع
-          </a>
-          <p class="text-xs text-gray-500 text-center max-w-md">
-            En cliquant sur l’un des boutons ci-dessus, vous accéderez aux différentes façons de soutenir ce projet
-            (contact ou infos bancaires).
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 mb-3">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Solidarité & entraide</h3>
+          <p class="text-sm text-gray-700">
+            Actions d’urgence lors des crises (COVID-19, séisme d’Al Haouz), soutien aux familles
+            vulnérables et mobilisation de la diaspora originaire de Tinlaf.
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-      <!-- Slider / images du projet en cours -->
-      <div class="relative h-64 sm:h-80 overflow-hidden rounded-2xl shadow-lg" id="carousel-ongoing">
-        <img src="en cours-1/1.jpeg"
-             alt="Travaux de la route entre la passerelle et le douar Tinlaf"
-             class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700">
-        <img src="en cours-1/2.jpeg"
-             alt="Vue des travaux en cours sur la route"
-             class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
-        <img src="en cours-1/3.jpeg"
-             alt="Participation des habitants aux travaux de la route"
-             class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
-        <img src="en cours-1/4.jpeg"
-             alt="Participation des habitants aux travaux de la route"
-             class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
-        <img src="en cours-1/5.jpeg"
-             alt=
-
+    <!-- Réalisation en cours -->
+    <section class="mt-16">
+      <div class="text-center max-w-3xl mx-auto mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-2">
+          Réalisation en cours
+        </h2>
+        <p class="text-gray-600 text-sm sm:text-base">
+          Un projet routier actuellement en cours entre la passerelle et l’entrée du douar Tinlaf,
+          afin d’améliorer l’accès au village et de faciliter le déplacement des habitants dans de bonnes conditions.
+        </p>
       </div>
 
-      </sectiom>
-    <!-- Quelques réalisations mises en avant -->
+      <div class="bg-white rounded-3xl shadow-md p-6 sm:p-8">
+        <div class="grid gap-6 md:grid-cols-2 items-center">
+          <!-- Texte -->
+          <div class="space-y-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-800 text-xs font-semibold uppercase tracking-wide">
+              Projet routier en cours
+            </span>
+
+            <h3 class="text-xl sm:text-2xl font-semibold leading-snug">
+              Aménagement et revêtement de la route
+              <span class="block text-green-700">
+                entre la passerelle et l’entrée du douar Tinlaf
+              </span>
+            </h3>
+
+            <p class="text-sm sm:text-base text-gray-700">
+              Ce projet vise à aménager et à revêtir la route qui relie la passerelle au principal accès du douar Tinlaf.
+              Il s’inscrit dans la continuité des efforts de l’Association Tinlaf pour le Développement et la Coopération
+              afin d’améliorer la voirie locale, faciliter la circulation des habitants et renforcer l’ouverture du douar
+              sur son environnement, avec le soutien et la contribution de bienfaiteurs.
+            </p>
+
+            <p dir="rtl" lang="ar"
+               class="text-sm sm:text-base text-gray-700"
+               style="font-family: 'Amiri', serif;">
+              يعمل هذا المشروع الخيري على تهيئة وتعبيد الطريق الرابطة بين القنطرة ومدخل دوار تنلاف، وذلك بهدف تحسين
+              الولوج إلى الدوار وتسهيل تنقل الساكنة في ظروف جيدة. يندرج هذا العمل ضمن جهود جمعية تنلاف للتنمية
+              والتعاون في الارتقاء بالبنية التحتية وخدمة الساكنة، بدعم ومساهمة أهل الخير والإحسان.
+            </p>
+
+            <div class="mt-6 flex flex-col items-center gap-3">
+              <a href="#soutenir"
+                 class="inline-flex w-full max-w-xs justify-center px-6 py-3 rounded-full bg-green-700 text-white text-sm sm:text-base font-semibold shadow hover:bg-green-800 transition">
+                Nous soutenir pour finaliser ce projet
+              </a>
+              <a href="#soutenir"
+                 class="inline-flex w-full max-w-xs justify-center px-6 py-3 rounded-full border border-green-700 text-green-700 text-sm sm:text-base font-semibold bg-white hover:bg-green-50 transition"
+                 dir="rtl" lang="ar" style="font-family: 'Amiri', serif;">
+                المساهمة في إتمام هذا المشروع
+              </a>
+              <p class="text-xs text-gray-500 text-center max-w-md">
+                En cliquant sur l’un des boutons ci-dessus, vous accéderez aux différentes façons de soutenir ce projet
+                (contact ou infos bancaires).
+              </p>
+            </div>
+          </div>
+
+          <!-- Slider -->
+          <div class="relative h-64 sm:h-80 overflow-hidden rounded-2xl shadow-lg" id="carousel-ongoing">
+            <img src="en cours-1/1.jpeg"
+                 alt="Travaux de la route entre la passerelle et le douar Tinlaf"
+                 class="opacity-100">
+            <img src="en cours-1/2.jpeg"
+                 alt="Vue des travaux en cours sur la route"
+                 class="opacity-0">
+            <img src="en cours-1/3.jpeg"
+                 alt="Participation des habitants aux travaux de la route"
+                 class="opacity-0">
+            <img src="en cours-1/4.jpeg"
+                 alt="Participation des habitants aux travaux de la route"
+                 class="opacity-0">
+            <img src="en cours-1/5.jpeg"
+                 alt="Participation des habitants aux travaux de la route"
+                 class="opacity-0">
+            <img src="en cours-1/6.jpeg"
+                 alt="Participation des habitants aux travaux de la route"
+                 class="opacity-0">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quelques réalisations -->
     <section>
       <div class="flex items-center justify-between mb-4">
-  <h2 class="text-2xl sm:text-3xl font-bold">Quelques réalisations marquantes</h2>
-  <a href="realisations.html"
-     class="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-green-600 text-white text-sm font-semibold shadow hover:bg-green-700 transition">
-    Voir toutes nos réalisations 
-  </a>
-</div>
+        <h2 class="text-2xl sm:text-3xl font-bold">Quelques réalisations marquantes</h2>
+        <a href="realisations.html"
+           class="hidden sm:inline-flex items-center px-4 py-2 rounded-lg bg-green-600 text-white text-sm font-semibold shadow hover:bg-green-700 transition">
+          Voir toutes nos réalisations
+        </a>
+      </div>
 
       <div class="grid gap-6 md:grid-cols-3">
-        <!-- Passerelle -->
         <a href="passerelle.html"
            class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col">
-          <img src="passerelle/1.jpeg"
-               alt="Passerelle de Tinlaf"
-               class="w-full h-40 object-cover">
+          <img src="passerelle/1.jpeg" alt="Passerelle de Tinlaf" class="w-full h-40 object-cover">
           <div class="p-4 flex-1 flex flex-col">
             <h3 class="text-lg font-semibold mb-1">
               Passerelle sur l’oued Tazyoukt
@@ -339,12 +302,9 @@
           </div>
         </a>
 
-        <!-- Puits -->
         <a href="puits.html"
            class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col">
-          <img src="puits/puits3.jpg"
-               alt="Puits de Tinlaf"
-               class="w-full h-40 object-cover">
+          <img src="puits/puits3.jpg" alt="Puits de Tinlaf" class="w-full h-40 object-cover">
           <div class="p-4 flex-1 flex flex-col">
             <h3 class="text-lg font-semibold mb-1">
               Forage et équipement d’un puits
@@ -356,12 +316,9 @@
           </div>
         </a>
 
-        <!-- Action de solidarité -->
         <a href="seisme.html"
            class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col">
-          <img src="solidarite/9.jpeg"
-               alt="Solidarité après le séisme d’Al Haouz"
-               class="w-full h-40 object-cover">
+          <img src="solidarite/9.jpeg" alt="Solidarité après le séisme d’Al Haouz" class="w-full h-40 object-cover">
           <div class="p-4 flex-1 flex flex-col">
             <h3 class="text-lg font-semibold mb-1">
               Solidarité après le séisme d’Al Haouz
@@ -374,7 +331,6 @@
         </a>
       </div>
 
-      <!-- lien mobile -->
       <div class="mt-4 text-center sm:hidden">
         <a href="realisations.html" class="text-sm text-green-700 hover:underline">
           Voir toutes nos réalisations →
@@ -383,7 +339,7 @@
     </section>
 
     <!-- Comment nous soutenir -->
-    <section class="bg-green-50 rounded-2xl p-6 sm:p-8">
+    <section id="soutenir" class="bg-green-50 rounded-2xl p-6 sm:p-8">
       <div class="grid gap-6 md:grid-cols-2 items-center">
         <div>
           <h2 class="text-2xl sm:text-3xl font-bold mb-3">Comment nous soutenir&nbsp;?</h2>
@@ -393,14 +349,21 @@
           </p>
           <p class="text-gray-700">
             Si vous êtes originaire du douar, résident, ou simplement sensible aux enjeux du monde rural,
-            n’hésitez pas à prendre contact avec nous.
+            n’hésitez pas à prendre contact avec nous ou à consulter nos informations bancaires pour un soutien direct.
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3">
-          <a href="contact.html"
-             class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-green-700 text-white font-semibold shadow hover:bg-green-800 transition">
-            Nous contacter
-          </a>
+        <div class="flex flex-col gap-3 sm:items-start">
+          <div class="flex flex-wrap gap-3">
+            <a href="contact.html"
+               class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-green-700 text-white font-semibold shadow hover:bg-green-800 transition">
+              Nous contacter
+            </a>
+            <a href="infobnqr.html"
+               class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 font-semibold bg-white hover:bg-green-50 transition">
+              <i class="fa-solid fa-building-columns mr-2"></i>
+              Infos bancaires
+            </a>
+          </div>
           <a href="https://www.facebook.com/share/14tRM5hjMP/?mibextid=qi2Omg" target="_blank"
              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-green-700 text-green-700 font-semibold hover:bg-green-100 transition">
             Suivre nos actualités sur Facebook
@@ -411,6 +374,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer class="bg-green-700 text-white text-center p-2 mt-8 text-sm">
     <p>&copy; 2025 Association TINLAF pour le Développement et la Coopération - Tous droits réservés</p>
     <div class="mt-1 flex justify-center space-x-4">
@@ -420,10 +384,10 @@
       <a href="https://wa.me/212666768839" target="_blank" class="inline-block ml-4">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-5 h-5 inline-block">
       </a>
-      
     </div>
   </footer>
-    <!-- juste avant </body> -->
+
+  <!-- SLIDER SCRIPT -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const carousel = document.getElementById('carousel-ongoing');
@@ -431,18 +395,14 @@
 
       const slides = carousel.querySelectorAll('img');
       let current = 0;
-
       if (slides.length <= 1) return;
 
-      // on s'assure que seule la première image est visible au départ
       slides.forEach((img, index) => {
         img.classList.add('absolute', 'inset-0', 'w-full', 'h-full', 'object-cover', 'transition-opacity', 'duration-700');
         if (index === 0) {
           img.classList.add('opacity-100');
-          img.classList.remove('opacity-0');
         } else {
           img.classList.add('opacity-0');
-          img.classList.remove('opacity-100');
         }
       });
 
@@ -454,11 +414,10 @@
 
         slides[current].classList.remove('opacity-0');
         slides[current].classList.add('opacity-100');
-      }, 2000); // change d'image toutes les 4 secondes
+      }, 4000);
     });
   </script>
-</body>
-</html>
 
 </body>
 </html>
+
